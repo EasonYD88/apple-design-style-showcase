@@ -40,3 +40,7 @@ http://127.0.0.1:4175/
 ## Notes
 
 These examples are intentionally static. They are meant to show visual hierarchy, Apple-like component conventions, responsive layout behavior, semantic color, restrained material effects, and accessibility-minded states rather than full product functionality.
+
+## License
+
+MIT License. See `LICENSE`.
