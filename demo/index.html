@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clarity Workspace | Apple Design Style Demo</title>
+    <meta
+      name="description"
+      content="A static Apple-inspired web demo showing calm hierarchy, native controls, responsive navigation, light and dark appearance, and accessible interaction states."
+    />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-theme="system" data-density="regular">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#overview" aria-label="Clarity Workspace home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>
+            <strong>Clarity Workspace</strong>
+            <small>Native Web Demo</small>
+          </span>
+        </a>
+
+        <nav class="nav-list" aria-label="Demo sections">
+          <a class="nav-item is-active" href="#overview">
+            <span aria-hidden="true">⌘</span>
+            Overview
+          </a>
+          <a class="nav-item" href="#canvas">
+            <span aria-hidden="true">□</span>
+            Canvas
+          </a>
+          <a class="nav-item" href="#states">
+            <span aria-hidden="true">✓</span>
+            States
+          </a>
+          <a class="nav-item" href="#accessibility">
+            <span aria-hidden="true">◐</span>
+            Accessibility
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="mini-stat">
+            <span>Hierarchy</span>
+            <strong>Clear</strong>
+          </div>
+          <div class="mini-stat">
+            <span>Material</span>
+            <strong>Restrained</strong>
+          </div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="toolbar" aria-label="Toolbar">
+          <div class="toolbar-leading">
+            <button class="icon-button menu-button" id="menu-toggle" type="button" aria-label="Open navigation">
+              <span aria-hidden="true">☰</span>
+            </button>
+            <div>
+              <p class="eyebrow">Apple Design Style</p>
+              <h1>A sample site for showing the skill in action</h1>
+            </div>
+          </div>
+
+          <form class="search-field" role="search">
+            <label class="sr-only" for="search">Search components</label>
+            <span aria-hidden="true">⌕</span>
+            <input id="search" name="search" type="search" placeholder="Search components and states" autocomplete="off" />
+          </form>
+
+          <div class="toolbar-actions">
+            <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle appearance">
+              <span aria-hidden="true">◐</span>
+            </button>
+            <button class="primary-button" type="button" id="done-button">Done</button>
+          </div>
+        </header>
+
+        <section class="hero-panel" id="overview" aria-labelledby="overview-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Content first, controls second</p>
+            <h2 id="overview-title">A calm, direct, adaptive workspace.</h2>
+            <p>
+              Desktop layouts use a sidebar, toolbar, and inspector; narrow screens collapse into a single column with bottom tabs. The visual system keeps system fonts, semantic colors, an 8 pt rhythm, and a small amount of functional glass.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#canvas">View Canvas</a>
+              <button class="secondary-button" type="button" id="open-sheet">Adjust Preferences</button>
+            </div>
+          </div>
+
+          <figure class="visual-asset" aria-label="Responsive interface preview">
+            <img src="./assets/clarity-preview.svg" alt="A clean desktop and phone interface preview" />
+          </figure>
+        </section>
+
+        <section class="content-grid" id="canvas" aria-label="Canvas and inspector">
+          <article class="preview-surface">
+            <div class="surface-header">
+              <div>
+                <p class="eyebrow">Preview Canvas</p>
+                <h2>Task Focus</h2>
+              </div>
+              <div class="segmented-control" role="tablist" aria-label="Device">
+                <button class="segment is-selected" type="button" role="tab" aria-selected="true" data-device="mac">Mac</button>
+                <button class="segment" type="button" role="tab" aria-selected="false" data-device="ipad">iPad</button>
+                <button class="segment" type="button" role="tab" aria-selected="false" data-device="iphone">iPhone</button>
+              </div>
+            </div>
+
+            <div class="device-preview" data-current-device="mac">
+              <div class="window-chrome" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-layout">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main">
+                  <div class="mock-title"></div>
+                  <div class="mock-row strong"></div>
+                  <div class="mock-row"></div>
+                  <div class="mock-row short"></div>
+                  <div class="mock-actions">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="mock-inspector"></div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="inspector" aria-label="Inspector">
+            <div class="inspector-section">
+              <div class="section-title">
+                <h2>Preferences</h2>
+                <button class="icon-button small more-settings" type="button" aria-label="More preferences">
+                  <span aria-hidden="true">⋯</span>
+                </button>
+              </div>
+
+              <label class="control-row" for="text-scale">
+                <span>
+                  <strong>Text Size</strong>
+                  <small id="scale-label">Regular</small>
+                </span>
+                <input id="text-scale" type="range" min="0" max="2" value="0" />
+              </label>
+
+              <label class="switch-row">
+                <span>
+                  <strong>Reduce Transparency</strong>
+                  <small>Use solid backgrounds to preserve contrast</small>
+                </span>
+                <input id="solid-toggle" type="checkbox" role="switch" />
+              </label>
+
+              <label class="switch-row">
+                <span>
+                  <strong>High Contrast</strong>
+                  <small>Strengthen separators and focus states</small>
+                </span>
+                <input id="contrast-toggle" type="checkbox" role="switch" />
+              </label>
+            </div>
+
+            <div class="inspector-section">
+              <h2>Accent Color</h2>
+              <div class="accent-swatches" aria-label="Choose accent color">
+                <button class="swatch is-selected" type="button" style="--swatch: #007aff" data-accent="#007aff" aria-label="Blue"></button>
+                <button class="swatch" type="button" style="--swatch: #34c759" data-accent="#34c759" aria-label="Green"></button>
+                <button class="swatch" type="button" style="--swatch: #ff9f0a" data-accent="#ff9f0a" aria-label="Orange"></button>
+                <button class="swatch" type="button" style="--swatch: #af52de" data-accent="#af52de" aria-label="Purple"></button>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="status-list" id="states" aria-labelledby="states-title">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">System States</p>
+              <h2 id="states-title">Component States</h2>
+            </div>
+            <button class="secondary-button compact" type="button" id="shuffle-status">Refresh</button>
+          </div>
+
+          <div class="status-grid">
+            <article class="status-item" data-tags="hierarchy toolbar">
+              <span class="status-glyph success" aria-hidden="true">✓</span>
+              <div>
+                <h3>Hierarchy</h3>
+                <p>Titles, content, and actions have a clear reading order.</p>
+              </div>
+            </article>
+            <article class="status-item" data-tags="material glass">
+              <span class="status-glyph neutral" aria-hidden="true">◐</span>
+              <div>
+                <h3>Material</h3>
+                <p>Glass appears only on toolbars and floating layers, keeping content stable.</p>
+              </div>
+            </article>
+            <article class="status-item" data-tags="accessibility contrast">
+              <span class="status-glyph warning" aria-hidden="true">!</span>
+              <div>
+                <h3>Noncolor States</h3>
+                <p>States use icon, text, and shape instead of color alone.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="accessibility-panel" id="accessibility" aria-labelledby="accessibility-title">
+          <div>
+            <p class="eyebrow">Accessibility</p>
+            <h2 id="accessibility-title">Accessibility is not an afterthought.</h2>
+            <p>
+              The demo includes keyboard focus, semantic buttons, visible labels, comfortable control sizes, dark appearance, reduced transparency, and larger text states.
+            </p>
+          </div>
+          <div class="keyboard-card" aria-label="Keyboard shortcut example">
+            <kbd>⌘</kbd>
+            <kbd>K</kbd>
+            <span>Focus Search</span>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-tabs" aria-label="Bottom tabs">
+        <a class="is-active" href="#overview"><span aria-hidden="true">⌘</span><span>Overview</span></a>
+        <a href="#canvas"><span aria-hidden="true">□</span><span>Canvas</span></a>
+        <a href="#states"><span aria-hidden="true">✓</span><span>States</span></a>
+        <a href="#accessibility"><span aria-hidden="true">◐</span><span>Access</span></a>
+      </nav>
+    </div>
+
+    <dialog class="settings-sheet" id="settings-sheet" aria-labelledby="sheet-title">
+      <form method="dialog">
+        <div class="sheet-grabber" aria-hidden="true"></div>
+        <div class="section-title">
+          <h2 id="sheet-title">Display Preferences</h2>
+          <button class="icon-button small" value="cancel" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <label class="switch-row">
+          <span>
+            <strong>Compact Density</strong>
+            <small>Suited to repeat-use work surfaces</small>
+          </span>
+          <input id="density-toggle" type="checkbox" role="switch" />
+        </label>
+        <menu>
+          <button class="secondary-button" value="cancel">Cancel</button>
+          <button class="primary-button" value="default">Done</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog class="settings-sheet nav-sheet" id="nav-sheet" aria-labelledby="nav-sheet-title">
+      <form method="dialog">
+        <div class="sheet-grabber" aria-hidden="true"></div>
+        <div class="section-title">
+          <h2 id="nav-sheet-title">Navigation</h2>
+          <button class="icon-button small" value="cancel" aria-label="Close navigation">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <nav class="sheet-nav" aria-label="Sheet navigation">
+          <a href="#overview">Overview</a>
+          <a href="#canvas">Canvas</a>
+          <a href="#states">States</a>
+          <a href="#accessibility">Accessibility</a>
+        </nav>
+      </form>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

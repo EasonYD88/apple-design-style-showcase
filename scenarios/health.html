@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Health Tracking | Apple Design Style</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-frame health-theme">
+      <aside class="sidebar">
+        <a class="brand" href="./index.html">
+          <span class="brand-icon">♡</span>
+          <span><strong>Pulse</strong><small>Health Tracking</small></span>
+        </a>
+        <nav class="sidebar-nav" aria-label="Health tracking navigation">
+          <a class="is-active" href="#"><span>◎</span> Today</a>
+          <a href="#"><span>♡</span> Heart Rate</a>
+          <a href="#"><span>◒</span> Sleep</a>
+          <a href="#"><span>✓</span> Habits</a>
+        </nav>
+        <div class="sidebar-note">
+          <small>Weekly Trend</small>
+          <strong>Recovery Good</strong>
+        </div>
+      </aside>
+
+      <main class="app-main">
+        <header class="toolbar">
+          <div>
+            <p class="eyebrow">Today</p>
+            <h1>Health Summary</h1>
+          </div>
+          <div class="toolbar-actions">
+            <div class="search-pill"><span>⌕</span><span>Search metrics</span></div>
+            <button class="icon-button" aria-label="Share">↗</button>
+            <button class="primary-button">Log</button>
+          </div>
+        </header>
+
+        <section class="hero-dashboard health-hero">
+          <div>
+            <p class="eyebrow">Activity</p>
+            <h2>Today is steady.</h2>
+            <p>Activity, sleep, and heart rate sit together so the most important metrics are scannable in the first viewport.</p>
+          </div>
+          <div class="activity-rings" aria-label="Activity rings preview">
+            <span class="ring move"></span>
+            <span class="ring exercise"></span>
+            <span class="ring stand"></span>
+            <strong>82%</strong>
+          </div>
+        </section>
+
+        <section class="metric-grid" aria-label="Health metrics">
+          <article class="metric-card">
+            <span class="metric-symbol red">♡</span>
+            <small>Heart Rate</small>
+            <strong>72 <span>bpm</span></strong>
+            <p>Resting range is normal</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-symbol green">✓</span>
+            <small>Steps</small>
+            <strong>8,420</strong>
+            <p>1,580 steps from goal</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-symbol blue">◒</span>
+            <small>Sleep</small>
+            <strong>7h 36m</strong>
+            <p>Deep sleep ratio improved</p>
+          </article>
+        </section>
+
+        <section class="two-column">
+          <article class="panel">
+            <div class="section-heading">
+              <h2>Sleep Stages</h2>
+              <span class="status-token">Last Night</span>
+            </div>
+            <div class="sleep-bars" aria-label="Sleep stage chart">
+              <span class="deep"></span><span class="core"></span><span class="rem"></span><span class="awake"></span>
+              <span class="core"></span><span class="deep"></span><span class="rem"></span>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="section-heading">
+              <h2>Reminders</h2>
+              <span class="status-token success">Synced</span>
+            </div>
+            <ul class="clean-list">
+              <li><span>10:00</span><strong>Hydrate</strong></li>
+              <li><span>12:30</span><strong>Post-meal walk</strong></li>
+              <li><span>21:40</span><strong>Wind down</strong></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <nav class="bottom-tabs" aria-label="Bottom navigation">
+        <a class="is-active" href="#"><span>◎</span><small>Today</small></a>
+        <a href="#"><span>♡</span><small>Heart Rate</small></a>
+        <a href="#"><span>◒</span><small>Sleep</small></a>
+        <a href="./index.html"><span>⌂</span><small>Back</small></a>
+      </nav>
+    </div>
+  </body>
+</html>

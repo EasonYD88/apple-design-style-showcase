@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Schedule Management | Apple Design Style</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-frame schedule-theme">
+      <aside class="sidebar">
+        <a class="brand" href="./index.html">
+          <span class="brand-icon">□</span>
+          <span><strong>Tempo</strong><small>Schedule Management</small></span>
+        </a>
+        <nav class="sidebar-nav" aria-label="Schedule navigation">
+          <a class="is-active" href="#"><span>□</span> This Week</a>
+          <a href="#"><span>⌕</span> Search</a>
+          <a href="#"><span>✓</span> Tasks</a>
+          <a href="#"><span>⋯</span> Calendar Sets</a>
+        </nav>
+        <div class="mini-calendar" aria-label="Month preview">
+          <strong>May</strong>
+          <div>
+            <span></span><span></span><span class="filled"></span><span></span><span></span><span class="filled"></span><span></span>
+            <span></span><span class="filled"></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="app-main">
+        <header class="toolbar">
+          <div>
+            <p class="eyebrow">Week View</p>
+            <h1>May 18 - 24</h1>
+          </div>
+          <div class="toolbar-actions">
+            <div class="segmented">
+              <span class="is-selected">Day</span><span>Week</span><span>Month</span>
+            </div>
+            <button class="icon-button" aria-label="Add">+</button>
+            <button class="primary-button">New</button>
+          </div>
+        </header>
+
+        <section class="calendar-board" aria-label="Weekly schedule view">
+          <div class="week-strip">
+            <span>M<em>18</em></span><span class="is-today">T<em>19</em></span><span>W<em>20</em></span>
+            <span>Th<em>21</em></span><span>F<em>22</em></span>
+          </div>
+          <div class="day-layout">
+            <div class="time-rail"><span>9:00</span><span>11:00</span><span>13:00</span><span>15:00</span></div>
+            <div class="event-stack">
+              <article class="event-card blue-event">
+                <small>09:30</small><strong>Product Sync</strong><p>Design review · 30 min</p>
+              </article>
+              <article class="event-card green-event">
+                <small>11:00</small><strong>Focus Time</strong><p>Notifications off · 90 min</p>
+              </article>
+              <article class="event-card orange-event">
+                <small>14:00</small><strong>Research Interview</strong><p>Remote meeting · 45 min</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="two-column">
+          <article class="panel">
+            <div class="section-heading">
+              <h2>Up Next</h2>
+              <span class="status-token">11:00</span>
+            </div>
+            <p class="large-note">Focus Time</p>
+            <p>A quiet window keeps schedule and task priorities from competing with each other.</p>
+          </article>
+          <article class="panel">
+            <div class="section-heading">
+              <h2>Reminders</h2>
+              <span class="status-token success">3 items</span>
+            </div>
+            <ul class="clean-list">
+              <li><span>Today</span><strong>Confirm meeting room</strong></li>
+              <li><span>Tomorrow</span><strong>Send agenda</strong></li>
+              <li><span>Friday</span><strong>Weekly report draft</strong></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <nav class="bottom-tabs" aria-label="Bottom navigation">
+        <a class="is-active" href="#"><span>□</span><small>Calendar</small></a>
+        <a href="#"><span>✓</span><small>Tasks</small></a>
+        <a href="#"><span>⌕</span><small>Search</small></a>
+        <a href="./index.html"><span>⌂</span><small>Back</small></a>
+      </nav>
+    </div>
+  </body>
+</html>

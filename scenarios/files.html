@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>File Manager | Apple Design Style</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-frame files-theme">
+      <aside class="sidebar">
+        <a class="brand" href="./index.html">
+          <span class="brand-icon">⌘</span>
+          <span><strong>Atlas</strong><small>File Manager</small></span>
+        </a>
+        <nav class="sidebar-nav" aria-label="File management navigation">
+          <a class="is-active" href="#"><span>⌂</span> Recents</a>
+          <a href="#"><span>□</span> Projects</a>
+          <a href="#"><span>↓</span> Downloads</a>
+          <a href="#"><span>☆</span> Favorites</a>
+        </nav>
+        <div class="storage-meter">
+          <div><strong>iCloud</strong><small>128 GB available</small></div>
+          <span></span>
+        </div>
+      </aside>
+
+      <main class="app-main files-layout">
+        <header class="toolbar">
+          <div>
+            <p class="eyebrow">Recents</p>
+            <h1>Recent Items</h1>
+          </div>
+          <div class="toolbar-actions">
+            <div class="search-pill"><span>⌕</span><span>Search files</span></div>
+            <button class="icon-button" aria-label="View">▦</button>
+            <button class="primary-button">Upload</button>
+          </div>
+        </header>
+
+        <section class="file-content" aria-label="File browser area">
+          <article class="file-browser">
+            <div class="section-heading">
+              <h2>Project Files</h2>
+              <span class="status-token">24 items</span>
+            </div>
+            <div class="file-grid">
+              <div class="file-tile image-tile"><span></span><strong>Campaign Preview</strong><small>PNG · Today</small></div>
+              <div class="file-tile doc-tile"><span></span><strong>Research Notes</strong><small>Pages · Yesterday</small></div>
+              <div class="file-tile sheet-tile"><span></span><strong>Budget 2026</strong><small>Numbers · Monday</small></div>
+              <div class="file-tile folder-tile"><span></span><strong>Design System</strong><small>Folder · 18 items</small></div>
+              <div class="file-tile code-tile"><span></span><strong>Prototype</strong><small>HTML · 42 KB</small></div>
+              <div class="file-tile pdf-tile"><span></span><strong>Brief</strong><small>PDF · 1.2 MB</small></div>
+            </div>
+          </article>
+
+          <aside class="inspector">
+            <div class="preview-document" aria-label="File preview">
+              <span></span><span></span><span></span>
+            </div>
+            <h2>Campaign Preview</h2>
+            <p>Modified today at 10:42. The inspector keeps file metadata and actions in a familiar location.</p>
+            <ul class="clean-list">
+              <li><span>Type</span><strong>PNG Image</strong></li>
+              <li><span>Size</span><strong>2.4 MB</strong></li>
+              <li><span>Tag</span><strong>Visual</strong></li>
+            </ul>
+          </aside>
+        </section>
+      </main>
+
+      <nav class="bottom-tabs" aria-label="Bottom navigation">
+        <a class="is-active" href="#"><span>⌂</span><small>Recents</small></a>
+        <a href="#"><span>□</span><small>Projects</small></a>
+        <a href="#"><span>⌕</span><small>Search</small></a>
+        <a href="./index.html"><span>⌂</span><small>Back</small></a>
+      </nav>
+    </div>
+  </body>
+</html>

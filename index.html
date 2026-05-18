@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apple Design Style Showcase</title>
+    <link rel="icon" href="./demo/assets/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --accent: #007aff;
+        --background: #f5f5f7;
+        --surface: #ffffff;
+        --text: #1d1d1f;
+        --secondary: #6e6e73;
+        --separator: rgba(60, 60, 67, 0.18);
+        --fill: rgba(120, 120, 128, 0.12);
+        --shadow: 0 24px 70px rgba(0, 0, 0, 0.12);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #111113;
+          --surface: #1c1c1e;
+          --text: #f5f5f7;
+          --secondary: #b7b7bd;
+          --separator: rgba(235, 235, 245, 0.16);
+          --fill: rgba(120, 120, 128, 0.22);
+          --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100svh;
+        padding: 24px;
+        background: var(--background);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(980px, 100%);
+        display: grid;
+        gap: 28px;
+      }
+
+      header {
+        max-width: 720px;
+      }
+
+      p {
+        color: var(--secondary);
+        line-height: 1.5;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 3.2rem;
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 6px;
+        color: var(--secondary);
+        font-size: 0.78rem;
+        font-weight: 750;
+        text-transform: uppercase;
+      }
+
+      .links {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      a {
+        min-height: 190px;
+        padding: 22px;
+        border: 1px solid var(--separator);
+        border-radius: 28px;
+        background: var(--surface);
+        color: inherit;
+        text-decoration: none;
+        box-shadow: var(--shadow);
+        display: grid;
+        align-content: space-between;
+      }
+
+      a span {
+        width: 48px;
+        height: 48px;
+        border-radius: 15px;
+        background: var(--accent);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+      }
+
+      a strong,
+      a small {
+        display: block;
+      }
+
+      a strong {
+        margin-bottom: 6px;
+        font-size: 1.25rem;
+      }
+
+      a small {
+        color: var(--secondary);
+      }
+
+      @media (max-width: 760px) {
+        body {
+          padding: 16px;
+          place-items: start center;
+        }
+
+        h1 {
+          font-size: 2.35rem;
+        }
+
+        .links {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Apple Design Style</p>
+        <h1>Skill and static UI samples.</h1>
+        <p>
+          A compact showcase for the `apple-design-style` Codex skill, including an interactive demo and three product scenario mockups.
+        </p>
+      </header>
+
+      <section class="links" aria-label="Showcase links">
+        <a href="./demo/">
+          <span>⌘</span>
+          <div>
+            <strong>Main Demo</strong>
+            <small>Workspace, toolbar, inspector, appearance states, and responsive navigation.</small>
+          </div>
+        </a>
+        <a href="./scenarios/">
+          <span>□</span>
+          <div>
+            <strong>Scenario Gallery</strong>
+            <small>Health tracking, schedule management, and file manager samples.</small>
+          </div>
+        </a>
+        <a href="./skill/SKILL.md">
+          <span>✓</span>
+          <div>
+            <strong>Skill.md</strong>
+            <small>The English skill instructions used to guide the design output.</small>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

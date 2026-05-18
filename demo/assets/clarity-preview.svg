@@ -1,0 +1,49 @@
+<svg width="920" height="620" viewBox="0 0 920 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Responsive native-feeling interface preview</title>
+  <desc id="desc">A quiet desktop window and a compact phone layout using simple surfaces, one accent color, and restrained depth.</desc>
+  <rect width="920" height="620" rx="48" fill="#F5F5F7"/>
+  <rect x="86" y="80" width="600" height="430" rx="30" fill="white" stroke="#D8D8DD"/>
+  <rect x="86" y="80" width="600" height="52" rx="30" fill="#FBFBFD"/>
+  <circle cx="122" cy="106" r="7" fill="#D1D1D6"/>
+  <circle cx="146" cy="106" r="7" fill="#D1D1D6"/>
+  <circle cx="170" cy="106" r="7" fill="#D1D1D6"/>
+  <rect x="110" y="160" width="132" height="302" rx="20" fill="#F5F5F7"/>
+  <rect x="132" y="188" width="68" height="10" rx="5" fill="#8E8E93"/>
+  <rect x="132" y="224" width="86" height="28" rx="14" fill="#E5E5EA"/>
+  <rect x="132" y="268" width="74" height="10" rx="5" fill="#C7C7CC"/>
+  <rect x="132" y="302" width="82" height="10" rx="5" fill="#C7C7CC"/>
+  <rect x="132" y="336" width="64" height="10" rx="5" fill="#C7C7CC"/>
+  <rect x="270" y="160" width="226" height="302" rx="20" fill="#F5F5F7"/>
+  <rect x="298" y="196" width="120" height="26" rx="13" fill="#007AFF"/>
+  <rect x="298" y="248" width="164" height="14" rx="7" fill="#C7C7CC"/>
+  <rect x="298" y="282" width="132" height="14" rx="7" fill="#D1D1D6"/>
+  <rect x="298" y="330" width="78" height="42" rx="21" fill="#007AFF"/>
+  <rect x="388" y="330" width="78" height="42" rx="21" fill="#E5E5EA"/>
+  <rect x="522" y="160" width="126" height="302" rx="20" fill="#F5F5F7"/>
+  <rect x="546" y="194" width="64" height="10" rx="5" fill="#8E8E93"/>
+  <rect x="546" y="232" width="78" height="34" rx="17" fill="#E5E5EA"/>
+  <rect x="546" y="294" width="78" height="34" rx="17" fill="#E5E5EA"/>
+  <g filter="url(#shadow)">
+    <rect x="620" y="190" width="174" height="330" rx="42" fill="#1C1C1E"/>
+    <rect x="634" y="204" width="146" height="302" rx="31" fill="#FBFBFD"/>
+    <rect x="676" y="220" width="62" height="5" rx="2.5" fill="#1C1C1E" opacity="0.14"/>
+    <rect x="654" y="252" width="104" height="64" rx="22" fill="#F5F5F7"/>
+    <rect x="674" y="276" width="64" height="12" rx="6" fill="#007AFF"/>
+    <rect x="654" y="334" width="104" height="22" rx="11" fill="#E5E5EA"/>
+    <rect x="654" y="370" width="84" height="10" rx="5" fill="#C7C7CC"/>
+    <rect x="654" y="398" width="104" height="40" rx="20" fill="#007AFF"/>
+    <rect x="670" y="462" width="72" height="5" rx="2.5" fill="#1C1C1E" opacity="0.16"/>
+  </g>
+  <defs>
+    <filter id="shadow" x="586" y="158" width="242" height="398" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="17"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+</svg>
